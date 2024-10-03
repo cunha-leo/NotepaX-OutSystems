@@ -168,6 +168,9 @@ O NotepaX foi desenvolvido como um projeto prático para consolidar os conhecime
 
 Se você gostou deste projeto, sinta-se à vontade para fazer um **Fork**, **Compartilhar**, ou deixar uma **Star**! 🟊
 
+Assista o vídeo do projeto aqui 👇😊
+[![Assistir ao vídeo](./assets/img/System/SubjectList/System_Main_SubjectList.png)](./assets/Video/NotepaX.mp4)
+
 Confira também outros repositórios no meu [GitHub](https://github.com/cunha-leo/) e acompanhe minha jornada e atualizações profissionais no meu [LinkedIn](https://www.linkedin.com/in/leo-cunha-allves/). Vamos crescer juntos e compartilhar conhecimento!
 
 ### 🔗 Links Úteis
