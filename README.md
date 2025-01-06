@@ -1,44 +1,44 @@
-# NotepaX - Sistema de Flashcards para Estudos
+# NotepaX - Aplicación de Falshcards para Estudio
 
-## 1. Introdução
+## 1. Introducción
 
-O NotepaX é um sistema de flashcards desenvolvido na plataforma **OutSystems Reactive**, com o objetivo de auxiliar no processo de estudo e fixação de conteúdos de aprendizagem. Este projeto foi desenvolvido como parte prática do **módulo de Introdução ao OutSystems** da **Academia RafaOutSystems Expert**, consolidando os conceitos fundamentais da plataforma em um projeto prático e funcional.
+NotepaX es un sistema de flashcards desarrollado en la plataforma **OutSystems Reactive**, con el objetivo de facilitar el proceso de estudio y la fijación de contenido de aprendizaje. Este proyecto fue desarollado como parte práctica del **módulo de Introducción a OutSystems** de la **Academia RafaOutSystems Expert**, consolidando los conceptos fundamentales de la plataforma en un proyecto prático y funcional.
 
-## 2. Objetivos do Projeto
+## 2. Objetivos del Proyecto
 
-- Aplicar os conceitos básicos do OutSystems para criar uma aplicação que auxilie no estudo de forma interativa.
-- Desenvolver um sistema de gerenciamento de cards, implementando as funcionalidades de **CRUD** (Create, Read, Update, Delete) para tópicos e flashcards.
-- Implementar um sistema de revisão de flashcards, utilizando técnicas de repetição espaçada para melhorar a retenção de conhecimento.
+- Aplicar los conceptos básicos de OutSystems para crear una apliacación que facilite el estudio de forma interactiva.
+- Desarrollar un sistema de gestión de tarjetas, implementando las funcionalidades de **CRUD** (Create, Read, Update, Delete) para temas y flashcards.
+- Implementar un sistema de revisión de flashcards, utilizando técnicas de repetición espaciada para mejorar la retención del conocimento.
 
-## 3. Funcionalidades do Projeto
+## 3. Funcionalidades del Proyecto
 
-- **Cadastro e Gerenciamento de Tópicos:** Criar, editar e excluir tópicos para organizar os conteúdos de estudo.
-- **Cadastro e Gerenciamento de Cards:** Adicionar, editar e excluir cards dentro dos tópicos, permitindo a construção de perguntas e respostas.
-- **Sistema de Revisão de Cards:** Implementar a técnica de repetição espaçada, permitindo ao usuário revisar os cards de maneira eficiente até que todas as respostas sejam acertadas.
-- **Botão de Reset e Função de Review:** A opção de resetar o baralho de cards ao final da revisão, permitindo recomeçar o ciclo de estudo do zero.
+- **Registro y Gestión de Temas:** Crear, editar y eliminar temas para organizar los contenidos de estudio.
+- **Registro y Gestión de Tarjeta:** Añadir, editar y eliminar trajetas dentro de los temas, permitiendo la construcción de preguntas y respuetas.
+- **Sistema de Revisón de Tarjetas:** Implementar la técnica de repetición espaciada, permitindo al usuario revisar las tarjetas de manera eficiente hasta que todas las respuestas sean correctas.
+- **Botón de Reinicio y Función de Revisión:** La opción de reiniciar el mazo de tarjetas al final de la revisión, permitiendo comenzar el ciclo de estudio desde cero.
 
-## 4. Tecnologias e Ferramentas Utilizadas
+## 4. Tecnologías y Herramientas Utilizadas
 
-- **OutSystems Reactive:** Para o desenvolvimento da aplicação e lógica de negócios.
-- **Server Actions e Client Actions:** Utilizadas para implementar o CRUD e a lógica de revisão dos cards.
-- **Banco de Dados Interno do OutSystems:** Gerenciamento dos dados relacionados a usuários, tópicos e cards.
+- **OutSystems Reactive:** Para el desarrollo de la apalicación y la lógica de negocio.
+- **Server Actions y Client Actions:** Utilizadas para implementar el CRUD y la lógica de revisión de las tarjetas.
+- **Base de Datos Interna de OutSystems:** Gestión de los datos realacionados con usuarios, temas y tarjetas.
 
-## 5. Estrutura do Banco de Dados
+## 5. Estructura de la Base de Datos
 
-O banco de dados foi modelado de acordo com os conceitos introdutórios do OutSystems:
+La base de datos fue modelada de acuerdo con los conceptos introductorios de OutSystems:
 
-- **Tabela MainSubject**(Assunto Principal)
-- **Tabela Topic**(Tópico do Card)
-- **Tabela Card**(Detalhes do Card)
-- **Tabela User_Extension e User**(Para o gerenciamento de usuários e recuperação de senha)
+- **Tabla MainSubject**(Asunto Principal)
+- **Tabla Topic**(Tema de la Tarjeta)
+- **Tabla Card**(Detalhes de la Tarjeta)
+- **Tabla User_Extension y User**(Para la gestión de usuarios y recuperación de contraseña)
 
 ![Visualização do ER do Projeto NotepaX](./assets/img/Model%20ER/ER.png)
 ![Visualização do ER do Projeto NotepaX](./assets/img/Model%20ER/ER2.png)
 ![Visualização do ER do Projeto NotepaX](./assets/img/Model%20ER/ER3.png)
 
-## 6. Estrutura de Telas e Navegação
+## 6. Estructura de Pantallas y Navegación
 
-- **Telas de Login:** Utiliza a tabela padrão User do OutSystems, com a funcionalidade de recuperação de senha usando um código secreto.
+- **Pantallas de Login:** Utiliza la tabla estándar User de OutSystems, con la funcionalidad de recuperación de contraseña mediante un código secreto.
 
 Login
 
@@ -51,11 +51,11 @@ Login
 - User Register
   ![Visualização da Tela Principal e Tópicos](./assets/img/System/Login/System_UserRegister.png)
   
-- **Tela Principal:** Apresenta os assuntos principais, possibilitando a navegação para os tópicos e cards.
+- **Pantalla Principal:** Presenta los temas principales, permitiendo la navegación hacia los tópicos y tarjetas.
 
-Subject Login
+Subject List
 
-- Subject List(Lista de Assunto Principal):
+- Subject List(Lista de Temas principales):
   ![Visualização da Tela Principal e Tópicos](./assets/img/System/SubjectList/System_Main_SubjectList.png)
 
 - New Subject List:
@@ -64,12 +64,12 @@ Subject Login
 - Edit Subject List:
   ![Visualização da Tela Principal e Tópicos](./assets/img/System/SubjectList/System_Edit_SubjectList.png)
 
-- **Tela de Tópicos e Cards:** Permite adicionar, editar e excluir tópicos e cards, seguindo as práticas de CRUD.
+- **Pantalla de Tópicos y Tarjetas:** Permite agregar, editar y elimar tópicos y tarjetas, siguiendo las prácticas de CRUD.
 
 Topic
 
 - New topic
-  - Topic(Criação de Tópicos a partir da Subject List Edit):
+  - Topic(Creación de Tópicos a partir de la Lista de Temas Editada):
 
   ![Visualização da Tela Principal e Tópicos](./assets/img/System/Topic/System_New_Topic.png)
 
@@ -84,7 +84,7 @@ Card
 - Edit Card
   ![Visualização da Tela Principal e Tópicos](./assets/img/System/Card/System_Edit_Card.png)
 
-- **Tela de Revisão de Cards:** Exibe os flashcards para o usuário indicar se acertou ou errou, proporcionando uma revisão interativa e prática.
+- **Pantalla de Revisión de Tarjetas:** Muestra las tarjetas al usuario para indicar si respondió correctamente o no, proporcionando una revisión interactiva y prática.
 
 Review
 
@@ -100,43 +100,43 @@ Review
 - Review Completed
   ![Visualização da Tela de Revisão de Cards](./assets/img/System/Review/System_Review%20Completed.png)
   
-## 7. Lógica de Negócio Implementada
+## 7. Lógica de Negocio Implementada
 
-- **CRUD Completo:** Implementação completa para todas as entidades do projeto (Assunto Principal, Tópico e Card), seguindo os princípios básicos do OutSystems.
-- **Repetição Espaçada:** O sistema revisa os cards que o usuário marcou como incorretos até que sejam acertados, garantindo a retenção do conteúdo.
-- **Validações:** Implementadas para assegurar que os dados inseridos pelo usuário são válidos e completos.
+- **CRUD Completo:** Implementación completa para toda las entidades del proyecto (Tema Principal, Tópico y Tarjeta), siguiendo los principios básicos de OutSystems.
+- **Repetición Espaciada:** El sistema revisa las tarjetas que el usuario marcó como incorrectas hasta que sean respondidas correctamente, garantizando la reteción del contenido.
+- **Validaciones:** Implementadas para asegurar que los datos ingresados por el usuario sean válidos y completos.
 
   ![Exemplo de Lógica de Negócio - Server Action](./assets/img/Actions/Server%20Actions/Structure.png)
 
-## 8. Principais Server Actions e Client Actions
+## 8. Principales Server Actions e Client Actions
 
-- **User_Create e User_Recovery:** Ações que gerenciam o cadastro e a recuperação de senha de usuários.
+- **User_Create y User_Recovery:** Acciones que gestionan el registro y la recuperación de contraseña de los usuarios.
 
   ![Visualização da Ação User_Create](./assets/img/Actions/Server%20Actions/User/User_Create.png)
   
-- **MainSubject_CreateOrUpdate e MainSubject_Delete:** Manipulam a criação, atualização e exclusão de Assuntos Principais.
+- **MainSubject_CreateOrUpdate y MainSubject_Delete:** Manejan la creación, actualización y eliminación de Temas Principales.
 
   ![Visualização da Ação MainSubject_CreateOrUpdate](./assets/img/Actions/Server%20Actions/MainSubject/MainSubject_CreateOrUpdate.png)
   
-- **Topic_CreateOrUpdate e Topic_Delete:** Realizam as operações de CRUD para os Tópicos.
+- **Topic_CreateOrUpdate y Topic_Delete:** Realizan las operaciones de CRUD para los Tópicos.
 
   ![Visualização da Ação Topic_CreateOrUpdate](./assets/img/Actions/Server%20Actions/Topic/Topic_CreateOrUpdate.png)
   
-- **Card_CreateOrUpdate e Card_Delete:** Gerenciam as operações de CRUD para os Cards.
+- **Card_CreateOrUpdate y Card_Delete:** Gestionan las operaciones de CRUD para las Tarjetas.
 
   ![Visualização da Ação Card_CreateOrUpdate](./assets/img/Actions/Server%20Actions/Card/Card_CreateOrUpdate.png)
   
-- **Get_NextCard:** Responsável por recuperar o próximo card na sequência de revisão.
+- **Get_NextCard:** Responsable de recuperar la seguiente tarjeta en la secuencia de revisión.
 
   ![Visualização da Ação Get_NextCard](./assets/img/Actions/Server%20Actions/Card/Get_NextCard.png)
 
-## 9. Processos de Revisão e Resolução de Cards
+## 9. Procesos de Revisión y Rezolución de Tarjetas
 
-O processo de revisão é a funcionalidade central do NotepaX:
+El proceso de revisión es la funcionalidad central de NotepaX:
 
-- Ao acessar a revisão, o usuário visualiza o título do card e, ao virar, a resposta correta.
-- O usuário marca se acertou ou errou; cards incorretos voltam ao ciclo até que sejam acertados.
-- Uma vez que todos os cards são revisados corretamente, o processo de revisão é concluído, e o usuário pode reiniciá-lo com o botão de reset.
+- Al acceder a la revisión, el usuario visualiza el título de la tarjeta y, al voltearla la respuesta correcta.
+- El usuario indica si su respuesta fue correcta o incorrecta; las tarjetas incorrectas vuelven al ciclo hasta que sean respondidas correctamente.
+- Una vez que todas las tarjetas han sido revisadas correctamente, el proceso de revisión se completa, y el usuario puede reiniciarlo con el botón de reinicio.
 
 Review
 
@@ -152,30 +152,30 @@ Review
 - Review Completed
   ![Visualização da Tela de Revisão de Cards](./assets/img/System/Review/System_Review%20Completed.png)
 
-## 10. Recursos Adicionais
+## 10. Recursos Adicionales
 
-- **Botão Play/Refresh:** Inicia o processo de revisão dos cards e permite resetar para revisar novamente após a conclusão.
+- **Botón Play/Refresh:** Inicia el proceso de revisión de las tarjetas y permite reiniciarlo para revisar nuevamente después de completarlo.
 
   ![Visualização do Botão Play e Reset](./assets/img/System/Card/Studio_Card%20Review%20Buttons.png)
   
-- **Estruturação de Navegação:** Segue as melhores práticas de navegação para garantir que o usuário possa facilmente transitar entre as telas de assuntos, tópicos e cards.
+- **Estructuración de Navegación:** Sigue las mejores práticas de navegación para garantizar que el usuario pueda transitar fácilmente entre las pantallas de temas, tópicos y tarjetas.
 
-## 11. Considerações Finais
+## 11. Consideraciones Finales
 
-O NotepaX foi desenvolvido como um projeto prático para consolidar os conhecimentos do módulo introdutório de OutSystems, utilizando a abordagem OutSystems Reactive. O projeto demonstrou a aplicação dos fundamentos de construção de uma aplicação completa, desde a estruturação de banco de dados até a implementação de lógica e interface de usuário, fortalecendo a base de conhecimentos essenciais para o desenvolvimento low-code.
+El NotepaX fue desarollado como un proyecto práctico para consolidar los conocimientos del módulo introductorio de OutSystems, utilizando el enfoque OutSystems Reactive. El proyecto demonstró la aplicación de los fundamentos para construir una aplicación completa, desde la estructuración de la base de datos hasta la implementación de lógica y la interfaz de usuario, fortaleciendo la base de conocimientos esenciales para el desarrollo low-code.
 
-## 12. Contribua e Conecte-se
+## 12. Contribuye y Conéctate
 
-Se você gostou deste projeto, sinta-se à vontade para fazer um **Fork**, **Compartilhar**, ou deixar uma **Star**! 🟊
+Si te gustó este proyecto, ¡no dudes en hacer un **Fork**, **Compartir**, o dejar una **Estrella**! 🟊
 
-Assista o vídeo do projeto clicando aqui 👇😊
+Mira el video del proyecto haciendo clic aquí 👇😊
 [![Alt Text](./assets/img/Post/Design%20sem%20nome.png)](https://www.youtube.com/watch?v=cpPO5nh_c4M)
 
-Confira também outros repositórios no meu [GitHub](https://github.com/cunha-leo/) e acompanhe minha jornada e atualizações profissionais no meu [LinkedIn](https://www.linkedin.com/in/leo-cunha-allves/). Vamos crescer juntos e compartilhar conhecimento!
+Consulta también otros respositorios en mi [GitHub](https://github.com/cunha-leo/) y sigue mi trayectoria y actualizaciones profesionales en mi [LinkedIn](https://www.linkedin.com/in/leo-cunha-allves/). ¡Crecemos juntos y compartimos conocimiento!
 
-### 🔗 Links Úteis
+### 🔗 Links Útiles
 
 - [Web NotepaX](https://personal-gqcyt0y3.outsystemscloud.com/NotepaX/)
-- [NotepaX GitHub](https://github.com/cunha-leo/NotepaX-OutSystems)
-- [Meu GitHub](https://github.com/cunha-leo/)
-- [Meu LinkedIn](https://www.linkedin.com/in/leo-cunha-allves/)
+- [NotepaX en GitHub](https://github.com/cunha-leo/NotepaX-OutSystems)
+- [Mi GitHub](https://github.com/cunha-leo/)
+- [Mi LinkedIn](https://www.linkedin.com/in/leo-cunha-allves/)
